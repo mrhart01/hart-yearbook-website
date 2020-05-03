@@ -1,0 +1,145 @@
+body{
+    background-color: rgba(202, 200, 200, 0.747);
+    width: 100%;
+    height: 100%;}
+
+/* Responsive iFrame */
+
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  }
+  
+  .responsive-iframe-container iframe,
+  .vresponsive-iframe-container object,
+  .vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  }
+div.CalendarHeader{
+    font-family: 'Permanent Marker', cursive;
+    font-size:3vw;
+    background: linear-gradient(-45deg, rgb(255, 255, 255), #f1ca76, #bbbbbb, #f7c438);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }}
+     
+    .icon-bar {
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: .3vw;
+        transition: all 0.3s ease;
+        color: rgb(12, 12, 12);
+        font-size: 1vw;
+      }
+      
+      .icon-bar a:hover {
+        background-color: rgba(214, 212, 212, 0.918);
+      }
+      
+      .facebook {
+            background-color: rgba(12, 28, 248, 0.329);
+            border: solid;
+            color: rgb(238, 234, 234);
+            padding: 2vw 1vw;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1vw;
+            margin: 2px 1px;
+            cursor: pointer;
+      }    
+          
+      .email {
+        background-color: rgba(231, 27, 27, 0.596);
+        border: solid;
+        color: rgb(241, 241, 241);
+        padding: 10px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .instagram {
+        background-color: rgba(196, 122, 171, 0.486);
+        border: solid;
+        color: rgb(241, 241, 241);
+        padding: 10px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .call {
+        background-color: rgba(240, 207, 98, 0.486);
+        border: solid;
+        color: rgb(241, 241, 241);
+        padding: 10px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+     /* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
